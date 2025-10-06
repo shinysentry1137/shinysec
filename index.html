@@ -1,120 +1,264 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Website Coming Soon</title>
-  <style>
-    :root{
-      --bg1: #0f172a;
-      --bg2: #0b1220;
-      --accent: #7dd3fc;
-      --soft: #c7d2fe;
-    }
-
-    html,body{
-      height:100%;
-      margin:0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
-                   Roboto, "Helvetica Neue", Arial;
-      background: radial-gradient(1200px 600px at 10% 20%, rgba(125,211,252,0.06), transparent),
-                  radial-gradient(900px 400px at 90% 80%, rgba(199,210,254,0.04), transparent),
-                  linear-gradient(180deg,var(--bg1),var(--bg2));
-      color: #e6eef8;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:24px;
-      box-sizing:border-box;
-    }
-
-    .card{
-      text-align:center;
-      max-width:760px;
-      width:100%;
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border: 1px solid rgba(255,255,255,0.04);
-      padding:48px 32px;
-      border-radius:16px;
-      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
-      backdrop-filter: blur(6px) saturate(120%);
-    }
-
-    .emoji-row{
-      display:flex;
-      justify-content:center;
-      gap:12px;
-      margin-bottom:12px;
-    }
-
-    .emoji{
-      font-size:48px;
-      display:inline-block;
-      transform-origin:center;
-      animation: bob 3s ease-in-out infinite;
-    }
-
-    .emoji:nth-child(1){ animation-delay: 0s; }
-    .emoji:nth-child(2){ animation-delay: 1s; }
-    .emoji:nth-child(3){ animation-delay: 2s; }
-
-    @keyframes bob{
-      0%   { transform: translateY(0) rotate(0deg); }
-      25%  { transform: translateY(-10px) rotate(-2deg); }
-      50%  { transform: translateY(0) rotate(0deg); }
-      75%  { transform: translateY(-6px) rotate(2deg); }
-      100% { transform: translateY(0) rotate(0deg); }
-    }
-
-    h1{
-      margin:0 0 6px;
-      font-size:28px;
-      letter-spacing:0.2px;
-      color:var(--soft);
-    }
-
-    p{
-      margin:0;
-      color:rgba(230,238,248,0.85);
-      font-size:15px;
-    }
-
-    .meta{
-      margin-top:18px;
-      display:flex;
-      gap:12px;
-      justify-content:center;
-      flex-wrap:wrap;
-    }
-
-    .pill{
-      padding:8px 12px;
-      border-radius:999px;
-      background: rgba(125,211,252,0.06);
-      color:var(--accent);
-      font-size:13px;
-      border: 1px solid rgba(125,211,252,0.08);
-    }
-
-    @media (max-width:420px){
-      .card{ padding:28px 18px; border-radius:12px; }
-      .emoji{ font-size:40px; }
-      h1{ font-size:22px; }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | ShinySec[dot]org</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
 </head>
 <body>
-  <div class="card" role="status" aria-live="polite">
-    <div class="emoji-row" aria-hidden="true">
-      <div class="emoji">🚧</div>
-      <div class="emoji">🏗️</div>
-      <div class="emoji">🚧</div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="logo-name">
+        <a href="index.html"><img src="img/logo.png" alt="ShinySec Logo" style="display: block;"></a>
+        <h1>
+  <a href="index.html" style="color: white; text-decoration: none;">
+    ShinySec[dot]org
+  </a>
+</h1>
+
+      </div>
+      <nav>
+        <div class="hamburger">☰</div>
+        <ul>
+          <li><a href="about:blank">🏠 Home</a></li>
+          <li><a href="about:blank">ℹ️ About</a></li>
+          <li><a href="about:blank">📦 Projects</a></li>
+          <li><a href="about:blank">⚖️ Legal</a></li>
+        </ul>
+      </nav>
     </div>
-    <h1>Website coming soon :)</h1>
-    <p>Thanks for checking in! I'm still working on the contents of this space.</p>
-    <div class="meta" aria-hidden="true">
-	<div class="pill">Made by ShinySentry</div>
+  </header>
+
+  <!-- SPLASH -->
+  <section id="splash" class="hero">
+    <div class="centered">
+      <h1>🚧 This Site is Almost Ready! 🚧</h1>
+      <h2>Welcome to Shiny Sentry's Information Assurance Hub!</h2>
+      <br>
+      <p><em>*More content is being added - this website is still a work in progress!</em></p>
+      <br>
     </div>
-  </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="hero">
+    <div class="centered">
+      <h2>About the Founder</h2>
+    </div>
+    <div class="split">
+      <div class="image-box">
+        <img src="img/founder.png" alt="Founder">
+	<p><center><i>ShinySentry1137</i></center></p>
+      </div>
+      <div class="text-box">
+        <p>
+          I'm an information security and assurance consultant who builds educational materials for defensive security professionals. Many of my volunteer projects and initiatives are also intended to help protect high-risk individuals and marginalized communities. 
+        </p>
+        <br>
+        <p>
+          ShinySec[dot]org is an archive that helps to make my projects more open and accessible to the public.
+        </p>
+        <br>
+        <a href="about:blank" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED WORK -->
+  <section id="featured" class="hero">
+    <div class="centered">
+      <h2>Upcoming Projects (Winter 2025 to Spring 2026)</h2>
+    </div>
+    <div class="featured-work">
+      <div class="card">
+        <p><h3>IA/Infosec Textbooks</h3></p>
+        <img src="img/proj1.png" alt="Project 1">
+        <p><sup>Delayed Until Winter 2025</sup></p>
+        <p>Open textbook intended to be a starting point for new and returning learners of IA/IS. Written in collaboration with Jennifer Milford of Skarlet Corporation!</p>
+        <a href="#" class="btn">Coming Soon</a>
+      </div>
+      <div class="card">
+        <p><h3>Unassured Media</h3></p>
+        <img src="img/proj2.png" alt="Project 2">
+        <p><sup>Release TBA</sup></p>
+        <p>A satire infosec publication centered on topics in blue teaming and high-security workplace culture. Originally a library of fictional IT policy management cases.</p>
+        <a href="about:blank" class="btn">Coming Soon</a>
+      </div>
+      <div class="card">
+        <p><h3>Webcast Archive</h3></p>
+        <img src="img/proj3.png" alt="Project 3">
+        <p><sup>Release TBA</sup></p>
+        <p>Clean recordings and slide decks from all my academic presentations exploring topics in information assurance, security, theory, literacy, and ethics. </p>
+        <a href="about:blank" class="btn">Coming Soon</a>
+      </div>
+      <div class="card">
+        <p><h3>Sneakernet Kits</h3></p>
+        <img src="img/proj4.png" alt="Project 4">
+        <p><sup>Release TBA</sup></p>
+        <p>Follow-along guides for community organizers to create hacker meetups and events that openly reject common yet dangerous data sharing practices.</p>
+        <a href="about:blank" class="btn">Coming Soon</a>
+      </div>
+    </div>
+  </section>
+
+<p><marquee><em>Interested in learning about my development workflow? Click <a href="https://www.github.com/shinysentry1137/">here</a> to visit my "Productivity Library" GitHub repo!</em></marquee></p>
+
+  <!-- LIBRARY -->
+  <section id="library" class="hero">
+    <div class="centered">
+      <h2>Content Library</h2>
+    </div>
+    <div class="library-grid">
+
+      <!-- Column 1 -->
+      <div class="library-col">
+        <div class="long-card">
+          <img src="img/logo1.png" alt="Logo 1">
+          <div>
+            <strong>Category 1</strong>
+            <p>Short description. This can provide and describe particular information about this section.</p>
+            <a href="about:blank">Explore Collection >></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="library-col">
+        <div class="long-card">
+          <img src="img/logo2.png" alt="Logo 2">
+          <div>
+            <strong>Category 2</strong>
+            <p>Short description. This can provide and describe particular information about this section.</p>
+            <a href="about:blank">Explore Collection >></a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Column 3 -->
+      <div class="library-col">
+        <div class="long-card">
+          <img src="img/logo3.png" alt="Logo 3">
+          <div>
+            <strong>Category 3</strong>
+            <p>Short description. This can provide and describe particular information about this section.</p>
+            <a href="about:blank">Explore Collection >></a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIALS -->
+  <section id="socials" class="hero">
+    <div class="centered">
+      <h2>How to Reach Me</h2>      
+	<p>
+        Some information regarding active contact methods. Feel free to include anything here you think others should know!
+       </p>
+    </div>
+
+    <div class="split">
+      <div class="text-box">
+        <h3>Social Media</h3>
+        <p>GitHub: <a href="https://www.github.com/shinysentry1137/">shinysentry1137</a></p>
+        <p>Something: <a href="about:blank">[coming soon]</a></p>
+        <p>Something: <a href="about:blank">[coming soon]</a></p>
+        <p>Something: <a href="about:blank">[coming soon]</a></p>
+        <p>Something: <a href="about:blank">[coming soon]</a></p>
+	<br>
+        <p><a href="about:blank">Linktree</a> | <a href="about:blank">Carrd</a></p>
+      </div>
+      <div class="text-box">
+        <h3>Direct Contact</h3>
+        <p>Something: <a href="about:blank">[coming soon]</a></p>
+        <p>Something: <a href="about:blank">[coming soon]</a></p>
+	<p>Signal: <i>ShinySentry1137.42</i></p>
+        <p>Email: <i>shinysentrypublic[at]gmail[dot]com</i></p>
+        <br>
+        <p>*Please use my <a href="about:blank">public key</a> before sending me a message! I do not answer unencrypted emails.
+</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNER -->
+  <section id="friends" class="hero">
+    <div class="centered">
+      <h2>Trusted Partner & Featured Friend</h2>
+    </div>
+    <div class="split">
+      <div class="image-box">
+        <img src="img/skarlet.png" alt="Skarlet Corporation">
+      </div>
+      <div class="text-box">
+        <h3>Skarlet Corporation</h3>
+	<p>Offering tailored IT solutions in small business cybersecurity and data recovery!</p>
+	<br>
+        <p>
+          Owner Jennifer N. Milford specializes in industry standard frameworks, security training, advanced defense tools, and more. She has 16+ years of experience with information security and community education. Learn more about her work here!
+        </p>
+        <br>
+        <div>
+          <a href="https://skarlet.org/" class="btn">Official Website</a>
+          <a href="https://www.linkedin.com/in/jennifer-n-milford" class="btn">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGAL OR BOOKING (using this section for booking info, currently) -->
+  <section id="legal" class="hero">
+    <div class="centered">
+      <h2>Event Booking</h2>
+    </div>
+    <div class="split">
+      <div class="text-box">
+        <p>
+          All of my volunteer work is provided without any requirement of trust. I don't need to know anything about you except how I can help.</p>
+          <p>I sometimes make appearances at local security conferences. If you’d like me to join your event, feel free to reach out! Please read my restrictions and legal disclaimers first. I am not open to making exceptions or compromises to any terms listed in either of them.
+        </p>
+	<br>
+          <a href="about:blank" class="btn">Legal Disclaimers</a>
+          <a href="about:blank" class="btn">Restrictions (PDF)</a>
+      </div>
+      <div class="text-box">
+        <p>
+          <strong>Boundaries and Restrictions</strong>
+        </p>
+        <p>
+          While I recommend reading the full document to learn about my disclaimers, its key points are listed below:
+        </p>
+	<br>
+        <p>
+           (More will be added here as this site improves.)
+        </p>
+        <p>
+           (More will be added here as this site improves.)
+        </p>
+        <p>
+           (More will be added here as this site improves.)
+        </p>
+        <p>
+           (More will be added here as this site improves.)
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      THIS SITE IS 100% LIBRE! Grab the source code <a href="https://www.github.com/shinysentry1137/homepage-template">here</a> and enjoy :)
+    <br>
+    </p>
+  </footer>
+
 </body>
 </html>
